@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+      document.addEventListener(
+        "deviceready",
+        function() {
+          var div = document.getElementById("map_canvas");
+
+          // Create a Google Maps native view under the map_canvas div.
+          var map = plugin.google.maps.Map.getMap(div);
+
+          // If you click the button, do something...
+          var button = document.getElementById("button");
+          button.addEventListener("click", function() {
+            // Move to the position with animation
+            map.animateCamera({
+              target: { lat: 37.422359, lng: -122.084344 },
+              zoom: 17,
+              tilt: 60,
+              bearing: 140,
+              duration: 5000
+            });
+
+            // Add a maker
+            var marker = map.addMarker({
+              position: { lat: 37.422359, lng: -122.084344 },
+              title:
+                "Welecome to \n" +
+                "Cordova GoogleMaps plugin for iOS and Android",
+              snippet: "This plugin is awesome!",
+              animation: plugin.google.maps.Animation.BOUNCE
+            });
+
+            // Show the info window
+            marker.showInfoWindow();
+          });
+        },
+        false
+      );
+    </script>
+    <style type="text/css">
+      #map_canvas {
+        /* Must bigger size than 100x100 pixels */
+        width: 100%;
+        height: 300px;
+        border: 1px solid red;
+        transition: all 0.7s;
+        position: relative;
+        z-index: 1;
+      }
+      button {
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+      .body {
+        background: yellow;
+        position: relative;
+        z-index: 2;
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map_canvas">
+      <button id="button">Click me!</button>
+      <button id="button-resize">Resize!</button>
+    </div>
+
+    <div class="body">
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <a href="http://mobilly.lv">this anchor link - doesn't work</a> Odit,
+        alias impedit recusandae rerum aspernatur minus dolorem suscipit ut
+        maiores officiis repellendus? Voluptatum veniam iusto sequi deleniti
+        illo laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet
+        <a href="http://mobilly.lv">try to tap here and nothing</a>consectetur
+        adipisicing elit. Odit, alias impedit recusandae rerum aspernatur minus
+        dolorem suscipit ut maiores officiis repellendus? Voluptatum veniam
+        iusto sequi deleniti illo laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+        laborum similique consequatur!
+      </h1>
+    </div>
+
+    <script>
+      let up = false;
+      document
+        .getElementById("button-resize")
+        .addEventListener("mouseup", () => {
+          document.getElementById("map_canvas").style.height = up
+            ? "300px"
+            : "100vh";
+          up = !up;
+        });
+    </script>
+  </body>
+</html>
