@@ -61,91 +61,103 @@
         z-index: 2;
         margin-top: 0px;
       }
+
+      #container {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+        margin: 0px;
+      }
     </style>
   </head>
   <body>
-    <div id="map_canvas">
-      <button id="button">Click me!</button>
-      <button id="button-resize">Resize!</button>
-    </div>
+    <div id="container">
+      <div id="map_canvas">
+        <button id="button">Click me!</button>
+        <button id="button-resize">Resize!</button>
+      </div>
 
-    <div class="body">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        <a href="http://mobilly.lv">this anchor link - doesn't work</a> Odit,
-        alias impedit recusandae rerum aspernatur minus dolorem suscipit ut
-        maiores officiis repellendus? Voluptatum veniam iusto sequi deleniti
-        illo laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet
-        <a href="http://mobilly.lv">try to tap here and nothing</a>consectetur
-        adipisicing elit. Odit, alias impedit recusandae rerum aspernatur minus
-        dolorem suscipit ut maiores officiis repellendus? Voluptatum veniam
-        iusto sequi deleniti illo laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
-        impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
-        officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
-        laborum similique consequatur!
-      </h1>
+      <div class="body">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <a href="http://google.com">anchor link</a> Odit,
+          alias impedit recusandae rerum aspernatur minus dolorem suscipit ut
+          maiores officiis repellendus? Voluptatum veniam iusto sequi deleniti
+          illo laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet
+          <a href="http://google.com">try to tap here</a>consectetur
+          adipisicing elit. Odit, alias impedit recusandae rerum aspernatur
+          minus dolorem suscipit ut maiores officiis repellendus? Voluptatum
+          veniam iusto sequi deleniti illo laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias
+          impedit recusandae rerum aspernatur minus dolorem suscipit ut maiores
+          officiis repellendus? Voluptatum veniam iusto sequi deleniti illo
+          laborum similique consequatur!
+        </h1>
+      </div>
     </div>
-
     <script>
       let up = false;
       document
