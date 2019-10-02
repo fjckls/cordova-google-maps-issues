@@ -4,7 +4,7 @@
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="YOUR API KEY"/>
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyCP9IX3yehRNesNvgvhUR_ZWQeOBFuertk"/>
     <preference name="GOOGLE_MAPS_IOS_API_KEY" value="YOUR API KEY"/>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
